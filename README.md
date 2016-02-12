@@ -9,6 +9,10 @@ ____
 
 ## Server side
 
+### 000_-_Update_exist_project
+
+    npm update
+
 ### 4_-_Start_your_first_project
 
     npm install --save express
@@ -30,6 +34,7 @@ https://mongolab.com
 
     npm install --save mongoose
 
+db.createUser( { "user" : "root","pwd": "abc123","roles" : [ { role: "clusterAdmin", db: "admin" },{ role: "readAnyDatabase", db: "admin" },"readWrite"] },{ w: "majority" , wtimeout: 5000 } )
 
 ### 8_-_Your_first_Schema_-_Creating_User_Schema
 
